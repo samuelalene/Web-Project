@@ -1,0 +1,751 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #E0E0E0;
+    background-color: #121212;
+    position: relative;
+    line-height: 1.6;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/black.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: -1;
+}
+
+main {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 70px;
+    top: 60px;
+    z-index: 10;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    position: relative;
+    z-index: 5;
+    flex-wrap: wrap;
+}
+
+.nav-content ul {
+    list-style-type: none;
+    position: absolute;
+    right: 210px;
+    top: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-content ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-content ul li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    text-decoration: none;
+    color: #E0E0E0;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    white-space: nowrap;
+}
+
+.nav-content ul li a:hover,
+.nav-content ul li a.active {
+    background-color: rgba(78, 63, 63, 0.338);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+}
+
+article {
+    margin: 80px 60px 40px 500px;
+    padding: 25px;
+    border-radius: 9px;
+    background-color: rgba(78, 63, 63, 0.338);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+article h2,
+article p,
+article li {
+    color: white;
+}
+
+.content-Travel-1 {
+   margin-left: 75px; 
+   padding-bottom: 100px;
+}
+
+.content-Travel {
+    width: 90%;
+    max-width: 690px;
+    padding: 30px;
+    border-radius: 9px;
+    background-color: rgba(78, 63, 63, 0.338);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    color: white;
+   
+}
+
+.content-Travel h1,
+.content-Travel h2,
+.content-Travel h3,
+.content-Travel p,
+.content-Travel li {
+    color: white;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #E0E0E0;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #F5F5F5;
+    margin-bottom: 0.75em;
+}
+
+.Jump-section a {
+    text-decoration: none;
+    color: white;
+    padding: 10px; 
+    display: block; 
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.Jump-section {
+    text-align: center;
+    margin: 70px auto 50px auto;
+    width: 80%;
+    max-width: 630px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 15px 0;
+    background-color: rgba(78, 63, 63, 0.338); 
+}
+
+/*  styles for the table within Jump-section */
+.Jump-section table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    background-color: rgba(78, 63, 63, 0.338); 
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+.Jump-section caption {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.Jump-section td {
+    padding: 5px; 
+    text-align: center;
+    vertical-align: middle;
+    border: none; 
+}
+
+.Jump-section a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 15px; 
+}
+
+
+/* Media Queries - Specific adjustment for smaller screens to ensure wrapping */
+@media (max-width: 768px) {
+    .Jump-section table {
+        display: block;
+        width: 100%;
+    }
+    .Jump-section tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Jump-section td {
+        flex: 1 1 auto;
+        min-width: 120px;
+        margin: 5px;
+    }
+}
+
+.Destinations-content-1 {
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto 100px auto;
+}
+
+.Destinations-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(78, 63, 63, 0.338);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    padding: 25px;
+    border-radius: 8px;
+    color: white;
+}
+
+.Destinations-content h2,
+.Destinations-content p,
+.Destinations-content .spots a p {
+    color: white !important;
+}
+
+.Destinations-content .spots h2 {
+    margin-bottom: 15px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+    padding: 20px;
+}
+
+.image-container {
+    text-align: center;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.image-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #D0D0D0;
+}
+
+.Gallery-content {
+    background-color: rgba(78, 63, 63, 0.338);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 150px auto 100px auto;
+    border-radius: 8px;
+    color: white;
+    width: 85%;
+    max-width: 1100px;
+}
+
+.Gallery-content h2,
+.Gallery-content p,
+.Gallery-content details,
+.Gallery-content summary {
+    color: white !important;
+}
+
+.Gallery-content details p b u {
+    color: white !important;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.spots {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cityL,
+.cityM,
+.cityR {
+    flex: 1;
+    min-width: 280px;
+    font-size: 1em;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 5px;
+}
+
+.cityL img,
+.cityM img,
+.cityR img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+.img-title {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #2C2C2C !important;
+    font-weight: bold;
+}
+
+.img-title:hover {
+    color: #000000 !important;
+}
+
+.Gallery-content details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: white !important;
+}
+
+.about-content-1 {
+    width: 80%;
+    max-width: 1250px;
+    margin: 150px auto 100px auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(78, 63, 63, 0.338);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 8px;
+    color: white;
+}
+
+.about-content h2,
+.about-content p,
+.about-content li {
+    color: white !important;
+}
+
+.center_part {
+    text-align: center;
+}
+
+.travel_guide_vedio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.travel_guide_vedio h2 {
+    margin-bottom: 10px;
+    color: white !important;
+}
+
+iframe {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 100%;
+}
+
+.team-content {
+    font-size: 1.1em;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.team-content li {
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.team-content li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-page-wrapper {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(40, 40, 40, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(226, 221, 221, 0.9);
+}
+
+#contactFormh2 {
+    text-align: center;
+    margin: 40px auto 25px auto;
+    color: #F5F5F5;
+}
+
+form label {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #D0D0D0;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #282828;
+    color: #E0E0E0;
+    font-size: 1em;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #58a6ff;
+    background-color: #303030;
+    box-shadow: 0 0 8px rgba(88, 166, 255, 0.6);
+    outline: none;
+}
+
+form button[type="submit"] {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #58a6ff;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #4090e0;
+}
+
+.services-page-wrapper {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 100px 20px 40px 20px;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-weight: bolder;
+    font-size: 2.8em;
+    color: #F0F0F0;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 1.2em;
+    color: #B0B0B0;
+}
+
+.services-list .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: rgba(78, 63, 63, 0.338);
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    text-align: left;
+    flex-basis: calc(50% - 1rem);
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.service-item h3,
+.service-item p {
+    color: white !important;
+}
+
+.service-item h3 {
+    font-size: 1.4rem;
+    color: #2ab300 !important;
+    margin-bottom: 0.75rem;
+}
+
+.service-item p {
+    flex-grow: 1;
+}
+
+.service-item img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 1rem;
+}
+
+.service-cta {
+    background-color: rgba(78, 63, 63, 0.338);
+    color: #222;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 30px 20px;
+    margin: 40px auto;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    padding-bottom: 80px;
+}
+
+.service-cta h1 {
+    margin-bottom: 15px;
+    color: #F5F5F5;
+}
+
+.service-cta .btn.btn-primary {
+    background-color: #0056b3;
+    color: #FFF;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.service-cta .btn.btn-primary:hover {
+    background-color: #004085;
+}
+
+
+/* Media Queries - Adjusted for homepage layout compatibility */
+/* Tablet and smaller desktops */
+@media (max-width: 1024px) {
+    .logo {
+        left: 20px;
+        top: 30px;
+    }
+
+    .nav-content ul {
+        right: 100px;
+        top: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+
+    /* Adjusted article margin for tablets - overrides original fixed margin */
+    article {
+        margin: 80px auto 40px auto; /* Center article horizontally on smaller screens */
+        width: 90%;
+    }
+
+    /* Adjusted content-Travel-1 margin for tablets - overrides original fixed margin */
+    .content-Travel-1 {
+        margin-left: auto; /* Allow auto margins to center */
+        margin-right: auto;
+        width: 90%; /* Give it fluid width */
+    }
+
+    .service-item {
+        flex-basis: calc(100% - 1rem);
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .spots {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cityL,
+    .cityM,
+    .cityR {
+        min-width: unset;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #contactForm {
+        width: 90%;
+    }
+
+    #contactFormh2 {
+        margin: 40px auto 25px auto;
+    }
+
+    .service-cta {
+        padding-bottom: 80px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .nav-content ul {
+        position: static;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+        gap: 0;
+    }
+
+    .nav-content ul li {
+        margin: 5px 0;
+    }
+
+
+    .Jump-section {
+        width: 95%;
+        margin: 50px auto 30px auto;
+    }
+
+
+
+    .contact-page-wrapper,
+    .services-page-wrapper,
+    .about-content-1,
+    .Destinations-content-1 {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .page-header {
+        padding: 50px 10px 20px 10px;
+    }
+
+    .page-header h1 {
+        font-size: 2em;
+    }
+
+    .page-header p {
+        font-size: 1em;
+    }
+
+    .service-cta {
+        width: 95%;
+        padding: 20px;
+        padding-bottom: 80px;
+    }
+
+    #contactForm {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #contactFormh2 {
+        margin: 20px auto;
+    }
+
+    /* Ensure home page content is centered on mobile */
+    article {
+        margin: 40px auto; /* More compact on mobile */
+        width: 95%;
+    }
+
+    .content-Travel-1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 480px) {
+    .nav-content ul li a {
+        font-size: large;
+        padding: 8px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .content-Travel,
+    .about-content,
+    .Destinations-content,
+    .Gallery-content {
+        padding: 15px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
